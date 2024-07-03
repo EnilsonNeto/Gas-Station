@@ -1,0 +1,22 @@
+﻿using Abp.AutoMapper;
+using System;
+
+namespace Gas_station.FuelPumps.Dto
+{
+    [AutoMap(typeof(FuelPump))]
+    public class CreateFuelPumpDto
+    {
+        public string TypeFuelPump { get; set; }
+
+        public int NumberFuelPump { get; set; }
+
+        public string SupllyValue { get; set; }
+
+        public DateTime SupplyDate { get; set; }
+
+        public string FuelValue { get; set; }
+
+        public Guid SupplyTankId { get; set; }
+
+    }
+}
